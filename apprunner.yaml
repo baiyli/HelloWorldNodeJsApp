@@ -3,6 +3,7 @@ runtime: nodejs14
 build:
   commands:
     build:
+      - echo $CODEBUILD_BUILD_IMAGE
       - npm install
 run:
   runtime-version: 14.20.1
